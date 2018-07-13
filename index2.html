@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scaleble=no">
+    <link href="https://fonts.googleapis.com/css?family=Chela+One|Rock+Salt|Shrikhand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Curriculum</title>
+    <style media="screen">
+    body
+    {
+      margin: 0;
+      background: url("ASSETS/fondo1.jpg");
+    }
+    header
+    {
+      background: rgb(0,0,0,0.5);
+    }
+    .menu
+    {
+      padding: 0px;
+    }
+      .menu ul
+      {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        justify-content: space-around;
+      }
+      .menu ul li
+      {
+        border: 6px solid #004581;
+        border-left: 3px dolid #004581 ;
+        background: black;
+        width: 100%;
+        padding: 20px;
+         text-align:center;
+        font-size: 20px;
+        transition: .5s;
+        list-style: none;
+      }
+      .menu ul li:hover
+      {
+        background: #961313;
+        cursor: pointer;
+      }
+      .menu ul li a
+      {
+        text-decoration: none;
+        color: white;
+        font-family: 'Shrikhand';
+      }
+      .logotipo
+      {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        margin: 20px;
+      }
+      .logotipo #mifoto
+      {
+        height: 20%;
+        width: 20%;
+        border: 5px solid white;
+        border-radius: 70%;
+        transition: 1s;
+      }
+      .logotipo #mifoto:hover
+      {
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+      .logotipo h1
+      {
+        color: white;
+        font-family: 'Rock Salt';
+      }
+      .columnas
+      {
+        background:rgb(0,0,0,0.5);
+        display: flex;
+      }
+      .columnas img
+      {
+        width: 50%;
+        height: 50%;
+
+
+      }
+      .columnas div
+      {
+        background:#9b1515;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin: 30px;
+        justify-content: space-around;
+        width: 50%;
+      }
+      .columnas div h1, .columnas div h3
+      {
+        font-family: 'Coda Caption';
+        height: 70px;
+        text-align: center;
+        color: white  ;
+      }
+      .columnas button
+      {
+        width: 100%;
+        font-family: 'Coda Caption';
+        border: 0;
+        background: linear-gradient(to left,#1876ce,#000000);
+        box-shadow: 5px 6px 18px -3px;
+        padding: 10px;
+        border-radius: 15px;
+
+      }
+      .columnas button h1
+      {
+      font-family: 'Coda Caption' ;
+        color: white;
+        margin: 0;
+        font-size: 15px;
+
+      }
+      footer
+      {
+        display: flex;
+        justify-content:space-between;
+          background:rgb(0,0,0,0.5);
+
+      }
+      footer div
+      {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background:#004581;
+        padding: 25px;
+        justify-content: center;
+      }
+      footer div a
+      {
+        color: white;
+        font-family:'Rock Salt';
+        text-decoration: none;
+        margin: 10px;
+        background: black;
+        padding: 5px;
+      }
+      @media screen and (max-width:720px)
+      {
+        .columnas
+        {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      @media screen and (max-width:500px)
+      {
+        .menu ul
+        {
+          flex-direction:column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="#">contacto</a>
+          </li>
+          <li>
+            <a href="#columnas">sobre mi</a>
+          </li>
+          <li>
+            <a href="#">portafolio</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="logotipo">
+        <img src="ASSETS/mifoto.jpg" alt="mi foto" id="mifoto">
+        <h1>Diego Maximiliano Yañez Toro</h1>
+      </div>
+    </header>
+    <section class="columnas" id="columnas">
+      <div class="col1">
+        <h1>estudio sistemas</h1>
+        <img src="ASSETS/imagen1.png" alt="logo sistemas">
+        <h3>complete mis estudios en la Universidad Mayor de San Andres</h3>
+        <button type="button" name="button">\
+          <h1>
+              conoce mas
+          </h1>
+        </button>
+      </div>
+      <div class="col2">
+        <h1>Desarrolo WEB</h1>
+        <img src="ASSETS/imagen2.png" alt="lodo Web">
+        <h3>estudio en star generator</h3>
+        <button type="button" name="button">
+          <h1>
+              conoce mas
+          </h1>
+        </button>
+      </div>
+    </section>
+    <footer>
+      <div class="constacto">
+        <a href="tel:++59175227133">Celula: 75227133</a>
+        <a href="http://api.whatsapp.com/send?phone=59175227133&amp;text=hola%20como&20estan%20estudiantes">whatsapp: +591 75227133</a>
+        <a href="https://www.facebook.com">facebook: Diego Maximiliano</a>
+        <a href="mailto:maximilianoyaneztoro@gmail.com">Email: maximilianoyaneztoro@gmail.com</a>
+
+      </div>
+      <div class="curriculum">
+        <a href="ASSETS/cv.pdf" download="mi curriculum"> Descargar Curriculum</a>
+      </div>
+    </footer>
+  </body>
+</html>
